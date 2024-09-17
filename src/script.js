@@ -310,26 +310,3 @@ window.onload = function () {
   passwordIconToggle();
   confirmPasswordIconToggle();
 };
-
-/*
-CREATING A FUNCTION 
-1. declare a function
-
-STORING THE HTML TAG IN A VARIABLE
-2. get the dropdown from the html and store it in a variable with it's id
-
-FETHCING AND STORING THE JSON DATA
-3. fetch the json file from it's path
-4. when we fetch the data from a server or a json file, we then get a response, the response can be resolved or rejected.
-5. inside the then method, we take the responce and convert is into a json format,
-6. when we convert it into a json format it will then launch another promise which will again be resolved or rejected.
-7. the second response from the then method will be handled by the resolved data and adding it into a variable.
-
-APPLY THE LOGIC FOR EACH COUNTRY
-8. the variable which will hold the data in the json format will then be looped over all the countries so that we have 
-   the logic for each country.
-9. create a variable which will create the option element in the html
-10. the option tag will then get the value which is the dial code of each country
-11. the option will also get a textContent which will display the text when the user drops down the menu to select a country
-12. we now have to connect the option element to the select tag in the html when we first called in while creating a function
-*/
