@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="form" content="This is for a complete form validation" />
+    <meta name="keywords" content="form, validation, complete form" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="form.svg" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body id="body">
+    <header id="header">
+      <h1>FORM</h1>
+    </header>
+
+    <main id="main">
+      <section id="formSection">
+        <form id="form">
+          <div id="usernameEmail">
+            <div id="username">
+              <label for="username" id="usernameLabel" class="label"
+                >Username:
+              </label>
+              <input
+                type="text"
+                id="usernameInput"
+                placeholder="Ex@mple0"
+                class="input"
+              />
+              <p id="usernameValidation" class="validation"></p>
+            </div>
+
+            <div id="email">
+              <label for="email" id="emailLabel" class="label">Email:</label>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="example@user.com"
+                class="input"
+                disabled
+              />
+              <p id="emailValidation" class="validation"></p>
+            </div>
+          </div>
+          <div id="bothPasswords">
+            <div id="password">
+              <label for="password" id="passwordLabel" class="label"
+                >Password:</label
+              >
+              <div class="logoInput">
+                <input
+                  type="password"
+                  id="passwordInput"
+                  placeholder="P@ssw0rd"
+                  class="input"
+                  disabled
+                />
+                <span id="toggleIcon" style="cursor: pointer">
+                  <img
+                    style="height: 8px"
+                    src="/public/hidden.svg"
+                    alt="password is hidden"
+                    id="eyeIcon"
+                  />
+                </span>
+              </div>
+              <p id="passwordValidation" class="validation"></p>
+            </div>
+
+            <div id="confirmPassword">
+              <label
+                for="confirmPassword"
+                id="confirmPasswordLabel"
+                class="label"
+                >Confirm Password:</label
+              >
+              <div class="logoInput">
+                <input
+                  type="password"
+                  id="confirmPasswordInput"
+                  placeholder="confirm password"
+                  class="input"
+                  disabled
+                />
+                <span id="confirmToggleIcon" style="cursor: pointer">
+                  <img
+                    style="height: 8px"
+                    src="/public/hidden.svg"
+                    alt="password is hidden"
+                    id="confirmEyeIcon"
+                  />
+                </span>
+              </div>
+              <p id="confirmPasswordValidation" class="validation"></p>
+            </div>
+          </div>
+
+          <div id="ageNumber">
+            <div id="age">
+              <label for="age" id="ageLabel" class="label">Age: </label>
+              <input
+                type="date"
+                name="age"
+                id="ageInput"
+                class="input"
+                disabled
+              />
+              <p id="ageValidation" class="validation"></p>
+            </div>
+
+            <div id="phoneNumber">
+              <label for="number" id="phoneLabel" class="label"
+                >Phone Number:</label
+              >
+              <div id="selectInput">
+                <select id="countryCodes" class="select"></select>
+                <input
+                  type="text"
+                  id="numberInput"
+                  name="number"
+                  class="input"
+                  disabled
+                />
+              </div>
+              <p id="numberValidation" class="validation"></p>
+            </div>
+          </div>
+
+          <div id="submitButton">
+            <button
+              type="submit"
+              onclick="clickValidation()"
+              id="submit"
+              disabled
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>

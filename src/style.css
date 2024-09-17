@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  background-color: #f0e3db;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+#body,
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: sans-serif;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#header {
+  margin-bottom: 3rem;
+}
+
+#header h1 {
+  margin-bottom: -8px;
+  font-family: "Monoton", sans-serif;
+  font-weight: 300;
+  font-size: 6rem;
+  letter-spacing: 2px;
+}
+
+#submit {
+  max-width: 4rem;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-left: 10%; */
+}
+
+#username,
+#password,
+#confirmPassword,
+#email,
+#age,
+#phoneNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.input {
+  border: #f0e3db;
+  background-color: #f0e3db;
+  border-bottom: 1.5px solid #000;
+  width: 12rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+#numberInput {
+  width: 7rem;
+}
+
+#usernameInput:focus,
+#emailInput:focus {
+  border-color: #000; /* or any color you prefer */
+  background-color: #f0e3db; /* or any color you prefer */
+  box-shadow: none;
+}
+
+.logoInput {
+  gap: -2rem;
+}
+
+.label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+#usernameEmail,
+#bothPasswords,
+#ageNumber {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+#bothPasswords {
+  gap: 4rem;
+}
+
+#usernameEmail {
+  gap: 6rem;
+}
+
+#ageNumber {
+  gap: 6rem;
+}
+
+.select {
+  border: none;
+  background-color: #f0e3db;
+  border-bottom: 1.5px solid #000;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+#submitButton {
+  background-color: #f0e3db;
+  width: 100%;
+}
+
+button#submit {
+  border: 1px solid #000;
+
+  padding: 0.5rem 1.5rem 0.5rem 10px;
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+button#submit:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #f0e3db;
+  font-weight: 400;
+}
+
+.validation {
+  margin-top: -10px;
+  margin-left: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  /* letter-spacing: px; */
+  font-weight: 400;
+}
+
+.validation.valid {
+  color: green;
+}
+
+.validation.invalid {
+  color: red;
+}
